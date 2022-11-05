@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build:step1": "webpack --config ./step1/webpack.config.js",
+    "exec:step1": "node ./step1/dist/main.js"
+  },
+  "dependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
