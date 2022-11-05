@@ -4,6 +4,7 @@
     "exec:step1": "node ./step1/dist/main.js"
   },
   "dependencies": {
+    "@types/webpack": "^5.28.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   }
