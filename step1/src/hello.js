@@ -1,11 +1,11 @@
-const MESSAGES = [
-    'hello webpack!',
-    '🍺🍺🍺🍺🍺',
-]
+import { sleep } from "./sleep";
 
 /** とりあえずhello */
-export const hello = () => {
-    MESSAGES.forEach(m => console.log(m));
-}
+export const hello = async () => {
+    console.log("🍣 > hello!");
 
+    // ３秒間をおいてから返事
+    await sleep(3000);
 
+    console.log("🍺 > hello!!");
+};

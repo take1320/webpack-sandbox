@@ -1,8 +1,8 @@
 import { hello } from "./hello";
 
-export const main = () => {
+export const main = async () => {
 console.log("start!");
-hello();
+await hello();
 console.log("end!");
 }
 main();
