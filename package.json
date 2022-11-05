@@ -1,10 +1,18 @@
 {
   "scripts": {
+    "step1": "npm run build:step1 && npm run exec:step1",
     "build:step1": "webpack --config ./step1/webpack.config.js",
-    "exec:step1": "node ./step1/dist/main.js"
+    "exec:step1": "node ./step1/dist/main.js",
+    "step2": "npm run build:step2 && npm run exec:step2",
+    "build:step2": "webpack --config ./step2/webpack.config.js",
+    "exec:step2": "node ./step2/dist/main.js"
   },
   "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
     "@types/webpack": "^5.28.0",
+    "babel-loader": "^9.1.0",
+    "core-js": "^3.26.0",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   }
