@@ -1,4 +1,8 @@
+import { hello } from "./hello";
+
 export const main = () => {
-console.log("Step1 start!");
+console.log("start!");
+hello();
+console.log("end!");
 }
 main();
