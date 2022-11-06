@@ -10,14 +10,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.*$/,
-      //   loader: `${__dirname}/debug-loader.js`,
-      //   options: {
-      //     message: "END",
-      //     hideSource: true,
-      //   },
-      // },
       {
         test: /\.css$/,
         use: [
