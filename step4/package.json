@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "start": "npm run build && npm run exec",
-    "build": "webpack --config ./webpack.config.js",
-    "exec": "node ./dist/main.js"
+    "build": "webpack --config ./webpack.config.js"
   },
   "dependencies": {
     "@babel/core": "^7.20.2",
