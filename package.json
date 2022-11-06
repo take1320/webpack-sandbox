@@ -5,7 +5,10 @@
     "exec:step1": "node ./step1/dist/main.js",
     "step2": "npm run build:step2 && npm run exec:step2",
     "build:step2": "webpack --config ./step2/webpack.config.js",
-    "exec:step2": "node ./step2/dist/main.js"
+    "exec:step2": "node ./step2/dist/main.js",
+    "step3": "npm run build:step3 && npm run exec:step3",
+    "build:step3": "webpack --config ./step3/webpack.config.js",
+    "exec:step3": "node ./step3/dist/main.js"
   },
   "dependencies": {
     "@babel/core": "^7.20.2",
