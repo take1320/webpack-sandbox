@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "npm run build && npm run exec",
+    "build": "webpack --config ./webpack.config.js",
+    "exec": "node ./dist/main.js"
+  },
+  "dependencies": {
+    "@types/webpack": "^5.28.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "npm run build && npm run exec",
+    "build": "webpack --config ./webpack.config.js",
+    "exec": "node ./dist/main.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@types/webpack": "^5.28.0",
+    "babel-loader": "^9.1.0",
+    "core-js": "^3.26.0",
+    "css-loader": "^6.7.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "vue": "2.7.13",
+    "vue-loader": "^15.10.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

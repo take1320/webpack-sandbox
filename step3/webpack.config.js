@@ -9,14 +9,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.*$/,
-        loader: `${__dirname}/debug-loader.js`,
-        options: {
-          message: "END",
-          hideSource: true,
-        },
-      },
-      {
         test: /\.(ts|js)$/,
         use: [
           {
@@ -60,14 +52,6 @@ module.exports = {
         loader: `${__dirname}/debug-loader.js`,
         options: {
           message: "ts-loader実行前",
-        },
-      },
-      {
-        test: /\.*$/,
-        loader: `${__dirname}/debug-loader.js`,
-        options: {
-          message: "START!",
-          hideSource: true,
         },
       },
     ],
