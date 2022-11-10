@@ -122,4 +122,6 @@ module.exports = {
     // mode:productionの場合はminimizeが実行される。結果を見やすくするためにfalseに変更
     minimize: false,
   },
+  // IE向けにES5設定(babel-loaderも見てくれる)
+  target: ["web", "es5"],
 };

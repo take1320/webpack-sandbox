@@ -18,17 +18,12 @@ module.exports = {
                 [
                   "@babel/preset-env",
                   // NOTE: polyfillは今回扱わない(ちょっと詰まった)
-                  // {
-                  //   useBuiltIns: "usage",
-                  //   corejs: 3,
-                  // },
+                  {
+                    useBuiltIns: "usage",
+                    corejs: 3,
+                  },
                 ],
               ],
-              // 対象のブラウザを指定するとブラウザの対応に合わせ変換してくれる
-              targets: {
-                chrome: "100",
-                // ie: "11",
-              },
             },
           },
         ],
@@ -42,4 +37,6 @@ module.exports = {
     // mode:productionの場合はminimizeが実行される。結果を見やすくするためにfalseに変更
     minimize: false,
   },
+  // IE向けにES5設定(babel-loaderも見てくれる)
+  target: ["web", "es5"],
 };
