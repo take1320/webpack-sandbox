@@ -18,10 +18,10 @@ module.exports = {
                 [
                   "@babel/preset-env",
                   // NOTE: polyfillは今回扱わない(ちょっと詰まった)
-                  {
-                    useBuiltIns: "usage",
-                    corejs: 3,
-                  },
+                  // {
+                  //   useBuiltIns: "usage",
+                  //   corejs: 3,
+                  // },
                 ],
               ],
             },
